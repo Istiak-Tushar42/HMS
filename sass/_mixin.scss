@@ -1,0 +1,139 @@
+.btn {
+    border-radius: 0;
+    border: 0;
+    outline: none;
+    box-shadow: none !important;
+    color: white !important;
+
+    &:active {
+        box-shadow: none;
+        outline: none;
+        border: 0;
+        border-color: $black;
+    }
+}
+
+.btn-block {
+    outline: none;
+    border: 0;
+    text-shadow: $text-shadow !important;
+}
+
+.btn-sm {
+    width: 100px !important;
+    padding: .5rem 0;
+    transition: .6s ease-in;
+
+    &:hover {
+        text-shadow: $text-shadow;
+    }
+}
+
+.btn-lg {
+    width: 150px;
+    padding: .4rem;
+    color: #fff;
+    transition: .3s ease-in;
+
+    &:hover {
+        background: lighten($color: $black, $amount: 20%);
+        text-shadow: $text-shadow;
+        color: darken($color: #fff, $amount: 10%);
+
+    }
+}
+
+.btn-success {
+    background: lighten($color: $black, $amount: 10%) !important;
+    color: white !important;
+    margin-right: .5rem !important;
+
+    &:hover {
+        background: $light !important;
+    }
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+    border-radius: 0 !important;
+    outline: none;
+    box-shadow: none !important;
+
+    &:active {
+        outline: none;
+        border-color: $black;
+    }
+    &:focus {
+        outline: none;
+        border: solid 1px $black !important;
+    }
+}
+
+.bg-success {
+    background: $black !important;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: $primary;
+    outline: none;
+    border-radius: 1.25rem;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: .5s;
+}
+
+input:checked[type="checkbox"] {
+    background: $black;
+    box-shadow: 0 0 5px $primary, 0 0 15px $primary;
+}
+
+input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: $black;
+    transition: .5s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    /*transform: scale(.98, .96);*/
+}
+
+input:checked[type="checkbox"]:before {
+    left: 20px;
+}
+
+input:checked[type="checkbox"]:after {
+    left: 105px;
+    background: $black;
+    box-shadow: 0 0 5px $primary, 0 0 15px $primary;
+}
+
+.form-check-label {
+    position: absolute;
+    top: 0;
+    left: 45px;
+}
+
+
+.personal-info {
+    .form-control {
+        border: solid 1px $black !important;
+    
+        &:focus {
+            border-color: $primary !important;
+        }
+    }
+}

@@ -1,0 +1,517 @@
+@import "_colors.scss";
+@import "_reset.scss";
+@import "_mixin.scss";
+
+
+/*=======================================================
+                        HEADER
+=========================================================*/
+.header {
+    width: 100%;
+
+    .navbar {
+        width: 100%;
+        border-bottom: 2px solid rgb(0, 37, 6);
+        background: $black !important;
+        padding: 0 4rem !important;
+        .navbar-brand {
+            img {
+                height: 3.4rem;
+            }
+        }
+
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $primary !important;
+                    font-size: 1rem;
+                    letter-spacing: .15rem;
+                    transition: all .4s ease-in-out;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: darken($color: red, $amount: 10%) !important;
+                    }
+                }
+            }
+
+            .nav-item.active {
+                .nav-link {
+                    cursor: pointer;
+                    color: red !important;
+                }
+            }
+        }
+    }
+
+    
+
+    // .sticky {
+    //     position: fixed;
+    //     z-index: 1111;
+    //     width: 100%;
+    //     top: 0;
+    //     border-bottom: 1px solid #e8e8e8;
+    //     background: rgba(7, 7, 7, .9);
+    //     vertical-align: middle;
+    // }
+
+    
+}
+
+
+/*=======================================================
+                        SLIDER
+=========================================================*/
+.slider {
+    .slide {
+        width: 100%;
+        .carousel-indicators {
+            li {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+            }
+        }
+
+        .carousel-inner {
+            width: 100%;
+            height: 460px;
+
+            .carousel-item {
+                width: 100%;
+                img {
+                    width: 100% !important;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+
+.book {
+    margin-top: 0 !important;
+    background: $black !important;
+    text-align: center;
+    padding: 1.15rem;
+
+    .input-group {
+        border-radius: 0;
+        input, select {
+            background: none;
+        }
+    }
+
+    .btn-dark {
+        padding: 1.65rem 0;
+        border-radius: 0;
+    }
+}
+
+@media(min-width: 768px) {
+    .header {
+        .center {
+            margin: 14rem 0 10rem;
+        }
+    }
+}
+
+/*=======================================================
+                        SERVICES
+=========================================================*/
+.service {
+    height: 100vh;
+    width: 100%;
+    background: #f8f8f8;
+
+    h1 {
+        color: $black;
+        margin-top: 3rem;
+    }
+
+    .title-bottom {
+        margin: 0 auto;
+        background: red;
+        height: 2px;
+        padding: .15rem;
+        width: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .card {
+        color: black !important;
+        border: 0 !important;
+        background: transparent;
+        padding: 0 !important;
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+
+        img {
+            transition: transform .6s ease-in;
+        }
+
+        .card-body {
+            .text-dark {
+                color: $black !important;
+            }
+        }
+    }
+}
+
+/*=======================================================
+                        FECILITY
+=========================================================*/
+.facility {
+    width: 100%;
+    background: $black;
+    opacity: .9;
+    color: rgb(1, 1, 12);
+
+    .card {
+        border: 1px solid #777777;
+        border-radius: 10px;
+        background-color: rgba(3, 3, 17, 0.3);
+        padding: 31px 20px 37px;
+    }
+}
+
+/*===============================================================
+                            SERVICES
+=================================================================*/
+.facilities {   
+    color: $black;
+    .aligns {
+        align-items: center;
+    }
+
+    h1.text-dark {
+        font-size: 3rem;
+        text-transform: uppercase;
+        text-shadow: $text-shadow;
+    }
+
+    .card {
+        border-radius: 0 !important;
+        background-color: rgba(14, 26, 17, 0.7);
+        border: 0 !important;
+        z-index: 1111;
+        transition: all 1s ease;
+        .card-body {
+            h6 {color: white}
+            p{color: white}
+        }
+        
+        &:hover {
+            transform: translateY(-.5rem);
+            box-shadow: $box-shadow;
+        }
+    }
+
+    img {
+        border-radius: 1rem !important;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*====================================================
+                            ROOMS
+======================================================*/
+.rooms {
+    background: #e5d8bf;
+    hr {
+        border: solid 2px #553344;
+        margin: 0 auto 2rem;
+        width: 5rem;
+    }
+
+    .card {
+        transition: all 1s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
+        .card-footer {
+            background: $black;
+            color: white;
+        }
+    }
+
+}
+
+/*====================================================
+                        ABOUT
+======================================================*/
+.about {
+    background: rgb(255, 255, 255);
+
+    .card {
+        background: none;
+        transition: all .7s ease-in-out;
+        &:hover {
+            color: teal;
+            .card-text {
+                color: rgb(14, 13, 13);
+            }
+        }
+    }
+}
+
+.history {
+    background: #ccc;
+    color: $black;
+    hr {
+        border: solid 2px #553344;
+        margin: 1rem auto 2rem;
+        width: 5rem;
+    }
+
+    .card {
+        background: transparent;
+    }
+
+    .about-img {
+        opacity: .75;
+        transition: all .4s ease-in-out;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+/*====================================================
+                        CONTACT
+======================================================*/
+.contact {
+    background: #f2eee5;
+    color: $black;
+    hr {
+        border: solid 2px red;
+        margin: 1rem auto 2rem;
+        width: 5rem;
+    }
+
+    form {
+        .form-group {
+            label::after {
+                content: ' *';
+                color: rgb(199, 16, 16);
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"],
+            textarea {
+                box-shadow: none !important;
+                border-radius: 0;
+
+                &:focus {
+                    border-color: $btn-background;
+                }
+            }
+
+            textarea {
+                resize: none;
+            }
+        }
+
+        .btn-primary {
+            box-shadow: none !important;
+            border-radius: 0;
+            background: $black;
+            color: white;
+            font-weight: bold;
+            letter-spacing: .25rem;
+            transition: all .6s ease-in-out;
+
+            &:hover {
+                color: $black;
+                background: white;
+                border: solid .1rem $black;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*====================================================
+                        BOOKING
+======================================================*/
+.booking {
+    margin-top: 2rem;
+    background: white !important;
+    .card {
+        border: 0;
+        background: transparent;
+        border-radius: 0;
+        position: relative;
+
+        .ribbon{
+            position: absolute;
+            background: $black;
+            color: $primary;
+            font-weight: bold;
+            top: 30px;
+            left: 15px;
+            width: 320px;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -1px;
+                border-top: solid 45px transparent;
+                border-right: solid 45px transparent;
+                border-bottom: solid 45px transparent;
+                border-left: solid 45px white;
+            }
+    
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -90px;
+                border-top: solid 45px transparent;
+                border-right: solid 45px transparent;
+                border-bottom: solid 45px transparent;
+                border-left: solid 45px $black;
+            }
+        }
+
+        .ribbon.ribbon-active {
+            background: $primary !important;
+            color: $black;
+            font-weight: bold !important;
+
+            &:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: -90px;
+                border-top: solid 45px transparent;
+                border-right: solid 45px transparent;
+                border-bottom: solid 45px transparent;
+                border-left: solid 45px $primary;
+            }
+        }
+
+        
+    }
+}
+/*====================================================
+                        ROOM DETAILS
+======================================================*/
+.room-info {
+    .card {
+        transition: all .5s ease-in;
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        .card-body {
+            figure {
+                &::before {
+                    content: "";
+                    position: absolute;
+                    border-top: solid 5px transparent;
+                    border-right: solid 5px red;
+                    border-bottom: solid 5px red;
+                    border-left: solid 5px transparent;
+                    top: -10px;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/*====================================================
+                        FOOTER
+======================================================*/
+.footer {
+    background: $black;
+    .card {
+        border: 0;
+        background: transparent;
+        color: white;
+        .card-body {
+            padding: 0;
+        }
+    }
+
+    .service-links {
+        a {
+            color: #f8f4f1;
+            transition: .6s;
+            &:hover {
+                color: #ccc;
+            }
+        }
+    }
+
+    .social-media {
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            li {
+                position: relative;
+                display: inline-block;
+                margin-right: 10px;
+                a {
+                    position: relative;
+                    width: 40px;
+                    height: 40px;
+                    display: table-cell;
+                    text-align: center;
+                    vertical-align: middle;
+                    background: lighten($color: $black, $amount: 10%);
+                    color: $primary;
+                    font-size: 24px;
+                    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+                    border-radius: 50%;
+                    transition: all .4s ease-in;
+
+                    
+                    &:hover {
+                        background: $primary;
+                        color: $black;
+                    }
+                }
+
+                span {
+                    visibility: hidden;
+                    opacity: 1;
+                    position: absolute;
+                    background: rgba(1,43,53, 0.9);
+                    color: $red;
+                    display: block;
+                    padding: 10px 20px;
+                    font-family: tahoma;
+                    border-radius: 50px;
+                    font-weight: bold;
+                    font-size: 12px;
+                    transition: .5s;
+                    top: 0;
+                    z-index: -1; 
+                }
+
+                &:hover {
+                    span {
+                        visibility: visible;
+                        opacity: 1;
+                        top: -86px;
+                        color: $primary;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+}

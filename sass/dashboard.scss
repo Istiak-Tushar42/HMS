@@ -1,0 +1,288 @@
+@import "_colors.scss";
+@import "_mixin.scss";
+
+.sidebar {
+    height: 100vh;
+    background: $black;
+}
+
+.card {
+    border-radius: 0;
+    border: none;
+    background: transparent;
+}
+
+.card-common {
+    transition: all .4s ease;
+    background: $black !important;
+}
+
+.card-common:hover {
+    transform: translateY(-.1rem);
+}
+
+.nav-link {
+    text-transform: uppercase;
+    padding: .6rem 1rem !important;
+}
+
+.dropdown-menu {
+    border-radius: 0;
+    border: none;
+    background: $black;
+}
+
+.dropright .dropdown-menu {
+    margin: 0 !important;
+}
+
+.dropdown-item {
+    padding: .6rem 1rem !important;
+}
+
+.dropdown-item:active {
+    background: none;
+}
+
+.dropdown-item:hover {
+    background-color: lighten($color: $black, $amount: 10%) !important;
+    color: #fff;
+}
+
+.sidebar-link {
+    transition: all .5s ease-in;
+}
+
+.sidebar-link:hover {
+    background-color: #15171A;
+    box-shadow: .1rem .2rem .4rem #111;
+    opacity: .6;
+}
+
+.current {
+    transition: all .4s ease;
+    box-shadow: .1rem .2rem .4rem #111;
+    border-radius: .3rem;
+}
+
+.current:hover {
+    background: #15171A;
+    transform: translateY(-.0625rem);
+    opacity: .6;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        height: auto;
+    }
+
+    .top-navbar {
+        position: static;
+    }
+}
+
+.chart {
+    .card {
+        box-shadow: $box-shadow;
+        .card-header {
+            background: $black;
+            color: white;
+            border-radius: 0;
+        }
+    }
+}
+
+.review {
+    .card {
+        box-shadow: $box-shadow !important;
+        .card-header {
+            background: $black !important;
+            color: white !important;
+            border-radius: 0 !important;
+        }
+        .card-body {
+            .media {
+                .ratext {
+                    color: white;
+                    font-weight: 700;
+                    padding: 1rem;
+                    background: $black;
+                }
+
+                // .star{
+                //     position:relative;
+                //     height:0px;
+                //     width:0px;
+                //     border-right: 30px solid transparent;
+                //     border-bottom: 10px  solid gold;
+                //     border-left: 330px solid transparent;
+                //     transform: rotate(35deg);
+
+                //     &::before{
+                //         position:absolute;
+                //         top: -15px;
+                //         left: -15px;
+                //         content:"";
+                //         border-bottom: 80px solid gold;
+                //         border-left: 30px solid transparent;
+                //         border-right: 30px solid transparent;
+                //         transform: rotate(-35deg);
+                //     }
+
+                //     &::after{
+                //         position:absolute;
+                //         top: 3px;
+                //         left: -45px;
+                //         content:"";
+                //         border-right: 30px solid transparent;
+                //         border-bottom: 10px solid gold;
+                //         border-left: 30px solid transparent;
+                //         transform: rotate(-70deg);
+                //     }
+                // }
+            }
+        }
+    }
+}
+
+.card {
+    .btn {
+        border-radius: 0 !important;
+        font-weight: bold;
+        border: none;
+        transition: all .5s ease;
+        width: 6rem;
+        padding: .5rem;
+        color: white !important;
+        
+        &:focus {
+            box-shadow: none;
+        }
+
+        &:hover {
+            color: white !important;
+        }
+    }
+
+    .btn-sm {
+        padding: .5rem !important;
+        width: 4rem !important;
+    }
+
+    .btn-lg {
+        width: 200px;
+    }
+    .table {
+        .btn {
+            border-radius: 0 !important;
+            font-weight: bold;
+            border: none;
+            transition: all .5s ease;
+            width: 6rem;
+            padding: .5rem;
+            
+            &:focus {
+                box-shadow: none;
+            }
+    
+            &:hover {
+                color: white !important;
+            }
+        }
+    
+        .btn-success {
+            background: lighten($color:darkgreen, $amount: 4%);
+    
+            &:hover {
+                background: darken($color:darkgreen, $amount: 10%);
+            }
+        }
+    
+        .btn-danger {
+            &:hover {
+                background: darken($color:darkred, $amount: 10%);
+            }
+        }
+
+        .btn-secondary {
+            &:hover {
+                background: darken($color: gray, $amount: 10%);
+            }
+        }
+    
+        .btn-warning {
+            margin-right: .5rem;
+            &:hover {
+                background: darken($color: #ffc107, $amount: 10%);
+                color: white;
+            }
+        }
+    }
+}
+
+form {
+    .form-group {
+        .form-control {
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            &:active {
+                box-shadow: none !important;
+            }
+        }
+    }
+}
+
+.booking {
+    padding: 1rem 0;
+    .card {
+        box-shadow: $box-shadow;
+        .card-header {
+            background: $black;
+            color: white;
+        }
+    }
+}
+.guest {
+    padding: 1rem 0;
+    .card {
+        box-shadow: $box-shadow;
+        .card-header {
+            background: $black;
+            color: white;
+        }
+    }
+}
+.common-shadow {
+    padding: 1rem 0;
+    .card {
+        box-shadow: $box-shadow;
+        .card-header {
+            background: $black;
+            color: white;
+        }
+    }
+}
+
+.modal {
+    .modal-header {
+        background: $black;
+    }
+
+    .mondal-header.close {
+        color: white !important;
+    }
+
+    .modal-title {
+        color: white !important;
+    }
+
+    .modal-body{
+        .form-group {
+            label {
+                color: $dark !important;
+                font-weight: bold !important;
+            }
+        }
+    }
+}

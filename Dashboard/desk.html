@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <title>Dashboard | Front-Desk</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-md navbar-light p-0">
+        <button class="navbar-toggler ml-auto mb-2 bg-light" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <i class="fas fa-align-right fa-lg text-info"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- SIDEBAR -->
+                    <div class="col-xl-2 col-lg-3 col-md-4 fixed-top sidebar text-light p-0">
+                        <a href="dashboard.html" class="navbar-brand text-light d-block mx-auto mb-3 button-border p-2">
+                            HOTEL MANAGEMENT
+                        </a>
+
+                        <div class="my-3">
+                            <img src="../images/admin.jpg" alt="admin" class="ml-3 img-fluid rounded-circle mr-2">
+                            <a href="#" class="text-decoration-none text-white">Halen Smith</a>
+                        </div>
+
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-item">
+                                <a href="dashboard.html" class="nav-link text-white mb-2 sidebar-link">
+                                    <i class="fas fa-tachometer-alt fa-lg mr-2"></i>Dashboard
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="booking.html" class="nav-link text-white mb-2 sidebar-link">
+                                    <i class="fas fa-sign-out-alt fa-lg mr-2"></i>Booking
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="guest.html" class="nav-link text-white mb-2 sidebar-link">
+                                    <i class="fas fa-user-circle fa-lg mr-2"></i>Guest
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="rooms.html" class="nav-link text-white mb-2 sidebar-link">
+                                    <i class="fas fa-home fa-lg mr-2"></i>Rooms
+                                </a>
+                            </li>
+                            <li class="nav-item current">
+                                <a href="desk.html" class="nav-link text-white mb-2 sidebar-link">
+                                    <i class="fas fa-folder-open fa-lg mr-2"></i>Front Desk
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="staff.html" class="nav-link text-white mb-2 sidebar-link">
+                                    <i class="fas fa-users fa-lg mr-2"></i>Staff
+                                </a>
+                            </li>
+                            <li class="nav-item dropright">
+                                <a href="#" class="nav-link text-white mb-2 sidebar-link dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fas fa-bookmark fa-lg mr-2"></i>Reports
+                                </a>
+                                <div class="dropdown-menu p-0">
+                                    <a class="dropdown-item text-light" href="revenue.html">Revenue Report</a>
+                                    <a class="dropdown-item text-light" href="occupancy.html">Occupancy Report</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a href="expense.html" class="nav-link text-white mb-2 sidebar-link">
+                                    <i class="fas fa-dollar-sign fa-lg mr-2"></i>Expense
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white mb-2 sidebar-link" data-toggle="modal" data-target="#sign-out">
+                                    <i class="fas fa-sign-out-alt fa-lg mr-2"></i>Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!-- ./SIDEBAR -->
+                </div>
+            </div>
+        </div>
+    </nav><!-- ./NAVBAR -->
+
+    
+
+
+    <!-- MODAL -->
+    <div class="modal fade" id="sign-out">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Want to leave?</h4>
+                    <button type="button" class="close text-light" data-dismiss="modal"><span>&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Press logout to leave</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success" type="button" data-dismiss="modal">Stay Here</button>
+                    <button class="btn btn-danger" type="button" data-dismiss="modal">Logout</button>
+                </div>
+            </div>
+        </div>
+    </div><!-- ./MODAL -->
+
+    <!-- JavaScript -->
+    <script src="../js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/Chart.bundle.min.js"></script>
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="../js/main.js"></script>
+</body>
+</html>

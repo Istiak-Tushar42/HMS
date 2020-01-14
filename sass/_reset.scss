@@ -1,0 +1,34 @@
+/*===============================================
+                    GOOGLE FONTS
+=================================================*/
+@import url('https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: .0625rem;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+hr {
+    border: solid 1px red;
+}
